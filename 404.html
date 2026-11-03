@@ -2,6 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com; font-src 'self' data: https://fonts.gstatic.com https://cdn.fontshare.com; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https: data: blob:; frame-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'" />
     <link rel="icon" type="image/svg+xml" href="/expctral-prism-studio/assets/favicon-CEfh43lx.svg" />
     <link rel="apple-touch-icon" href="/expctral-prism-studio/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,17 +14,13 @@
     />
     <title>Expctral Prism Studio — editor de shaders TSL e WebGPU</title>
 
-    <!-- Tipografia (design system v2.0): Exo 2 + DM Mono (Google) · Satoshi e Switzer (Fontshare, um link por família) -->
+    <!-- Tipografia (design system v2.0): Exo 2 + DM Mono (Google) · Satoshi e Switzer (Fontshare).
+         As folhas entram por src/app/fonts.ts, sem bloquear a primeira pintura (P-02); aqui só as conexões. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/expctral-prism-studio/assets/index-BMQH6GhG.js"></script>
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <script type="module" crossorigin src="/expctral-prism-studio/assets/index-D2TM6G7I.js"></script>
     <link rel="modulepreload" crossorigin href="/expctral-prism-studio/assets/rolldown-runtime-QTnfLwEv.js">
     <link rel="modulepreload" crossorigin href="/expctral-prism-studio/assets/react-CZI7_Jkm.js">
     <link rel="stylesheet" crossorigin href="/expctral-prism-studio/assets/index-BJXVlVRo.css">
